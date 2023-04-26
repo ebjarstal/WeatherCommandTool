@@ -25,4 +25,4 @@ if __name__ == "__main__":
         print("Humidity:", humidity, "%")
 
     else:
-        print("City not found.")
+        print(data["message"])
