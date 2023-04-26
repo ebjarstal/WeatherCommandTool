@@ -1,5 +1,4 @@
 import requests
-import json
 import config
 
 # API key from OpenWeatherMap
