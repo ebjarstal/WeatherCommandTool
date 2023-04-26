@@ -18,11 +18,11 @@ if __name__ == "__main__":
     # Checks if response contains weather data
     if data["cod"] != "404":
         weather = data["weather"][0]["description"]
-        temperature = data["main"]["temp"]
+        temperature = round(data["main"]["temp"]-273.15, 0)
         humidity = data["main"]["humidity"]
 
         print("Weather:", weather)
-        print("Temperature:", temperature, "K")
+        print("Temperature:", temperature, "C")
         print("Humidity:", humidity, "%")
 
     else:
