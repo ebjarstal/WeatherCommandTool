@@ -8,7 +8,7 @@ base_url = "https://api.openweathermap.org/data/2.5/weather?q="
 
 if __name__ == "__main__":
     while True:
-        city_name = input("Enter city name ('q' to exit): ")
+        city_name = input("\nEnter city name ('q' to exit): ")
         if city_name == "q":
             break
 
@@ -27,5 +27,6 @@ if __name__ == "__main__":
             print("Humidity:", humidity, "%")
 
         else:
-            print(data["message"])
+            print(f"\n{data['message']}")
+
     exit(0)
